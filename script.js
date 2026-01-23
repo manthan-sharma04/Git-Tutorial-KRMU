@@ -33,12 +33,46 @@
 // .textContent applies changes to the hidden elements also (display:none or visibility:hidden).
 // .innerText doesn't apply changes to hidden elements.
 
-const container=document.querySelector(".container")
-const button=document.querySelector("button")
-container.addEventListener("click",()=>{
-    console.log("Container clicked")
-})
+// const container=document.querySelector(".container")
+// const button=document.querySelector("button")
+// container.addEventListener("click",()=>{
+//     console.log("Container clicked")
+// })
 
-button.addEventListener("click",()=>{
-    console.log("Button clicked")
-})
+// button.addEventListener("click",()=>{
+//     console.log("Button clicked")
+// })
+
+// console.log(a) ERROR: ReferenceError: Cannot access 'a' before initialization
+// console.log(b) Undefined
+
+// let a = 239
+// var b = 2595
+
+// function hello(){
+//     console.log("Hello World")
+// }
+
+// hello()
+
+
+
+// function first() {
+    // second()
+// }
+// function second() {
+    // third()
+// }
+// function third() {
+    // console.trace()
+// }
+// first()
+
+let val=40
+
+function calc(){
+    console.log(val)
+    let val=100
+}
+
+calc()
