@@ -68,11 +68,15 @@
 // }
 // first()
 
-let val=40
+// let val=40
+// 
+// function calc(){
+    // console.log(val)
+    // let val=100
+// }
+// 
+// calc()
 
-function calc(){
-    console.log(val)
-    let val=100
-}
-
-calc()
+console.log("Navya pagal hai")
+setTimeout(()=>{console.log("Thodi jada hai")},2000)
+console.log("Everything is true here.")
