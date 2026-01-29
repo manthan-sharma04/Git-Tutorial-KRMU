@@ -77,6 +77,24 @@
 // 
 // calc()
 
-console.log("Navya pagal hai")
-setTimeout(()=>{console.log("Thodi jada hai")},2000)
-console.log("Everything is true here.")
+// console.log("Navya pagal hai")
+// setTimeout(()=>{console.log("Thodi jada hai")},2000)
+// console.log("Everything is true here.")
+
+// const variable=setTimeout(()=>{console.log(a);}, 1000)
+// clearTimeout(variable, 10000)
+
+// let a=1
+// const variable=setInterval(()=>{console.log(a);a++;}, 1000)
+// const timeID=setTimeout(()=>{clearInterval(variable)},11000)
+// clearTimeout(timeID)
+
+const name=document.querySelector("#name")
+const btn=document.querySelector(".btnadd")
+const list=document.querySelector(".list")
+btn.addEventListener("click",()=>{
+    const li=document.createElement('li')
+    li.innerText=name.value;
+    list.appendChild(li)
+    name.value="";
+})

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btnadd{
+    background-color: aqua;
+    border: 0%;
+    border-radius: 5%;
+    height: 30px;
+    width: 50px;
+
+}
