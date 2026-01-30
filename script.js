@@ -89,12 +89,64 @@
 // const timeID=setTimeout(()=>{clearInterval(variable)},11000)
 // clearTimeout(timeID)
 
-const name=document.querySelector("#name")
-const btn=document.querySelector(".btnadd")
-const list=document.querySelector(".list")
-btn.addEventListener("click",()=>{
-    const li=document.createElement('li')
-    li.innerText=name.value;
-    list.appendChild(li)
-    name.value="";
-})
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btnadd")
+// const list=document.querySelector(".list")
+// const dlt=document.createElement('btndlt')
+// 
+    // btn.addEventListener("click",()=>{
+        // const li=document.createElement('li')
+        // const dlt=document.createElement('button')
+        // li.innerText=name.value;
+        
+        // list.appendChild(li)
+        // name.value="";
+    // })
+// dlt.addEventListener("click",()=>{
+    // list.removeChild(li)
+    // dlt.innerText="Delete"
+    // list.removeChild(li)
+// })
+    
+
+
+// const btn=document.querySelector('.btnadd')
+// const list=document.querySelector('.list')
+// btn.addEventListener('click',()=>{
+    // if (name.value===""){
+        // return;
+    // }
+    // const li=document.createElement('li')
+    // const dlt=document.createElement('btndlt')
+    // dlt.innerText="Delete"
+// })
+
+
+
+// function shubham(something){
+//     console.log("Hello Shubham")
+//     something()
+// }
+
+// function krish(){
+//     console.log("Krish ka sunega gaana")
+// }
+
+// shubham(krish())
+
+
+console.log("Startinghomework...")
+setTimeout(()=>{
+    console.log("Homework Done!")
+    console.log("Starting Dinner....")
+
+    setTimeout(()=>{
+        console.log("Dinner Done!")
+        console.log("Getting ready to go out")
+    
+        setTimeout(()=>{
+        console.log("Going to playground")
+            
+        }, 1000)
+    }, 1500)
+},2000)
