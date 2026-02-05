@@ -135,18 +135,48 @@
 // shubham(krish())
 
 
-console.log("Startinghomework...")
-setTimeout(()=>{
-    console.log("Homework Done!")
-    console.log("Starting Dinner....")
+// console.log("Startinghomework...")
+// setTimeout(()=>{
+//     console.log("Homework Done!")
+//     console.log("Starting Dinner....")
 
-    setTimeout(()=>{
-        console.log("Dinner Done!")
-        console.log("Getting ready to go out")
+//     setTimeout(()=>{
+//         console.log("Dinner Done!")
+//         console.log("Getting ready to go out")
     
-        setTimeout(()=>{
-        console.log("Going to playground")
+//         setTimeout(()=>{
+//         console.log("Going to playground")
             
-        }, 1000)
-    }, 1500)
-},2000)
+//         }, 1000)
+//     }, 1500)
+// },2000)
+
+
+// PROMISES IN JS
+// const p = new Promise((res, reje) =>{
+    // const a = 12-4
+    // if (a == 10){
+        // res("Success")
+    // } else {
+        // reje("Failed")
+    // }
+// })
+// 
+// p.then((message) =>{
+    // console.log("Then " + message)
+// }).catch((message) =>{
+    // console.log("Catch " + message)
+// })
+// 
+// function doHomework(){
+    // const p = new Promise((res, reje) =>{
+        // let done=true;
+        // setTimeout(()=>{if (done){
+        // res("Homework Done!")
+        // } else {
+            // reje("Homework Not Done!")
+        // }
+// }, 2000)
+        // return p
+    // })
+// }
