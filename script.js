@@ -180,3 +180,18 @@
         // return p
     // })
 // }
+
+function doHomework(){
+    const p = new Promise((res, reje) =>{
+        let done=true;
+        setTimeout(()=>{
+            if (done){
+                res("Homework Done!")
+            } else {
+                reje("Homework Not Done!")
+            }
+        }, 2000)
+    })
+    return p
+}
+
