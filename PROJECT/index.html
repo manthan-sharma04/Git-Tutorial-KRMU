@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="form-div">
+        <form id="form">
+            <label for="eventTitle">Event Title</label>
+            <br>
+            <input type="text" name="eventTitle" id="eventTitle">
+            <br>
+            <label for="eventDate">Event Date</label>
+            <br>
+            <input type="date" name="eventDate" id="eventDate">
+            <br>
+            <label for="eventCategory">Event Category</label>
+            <br>
+            <select name="eventCategory" id="eventCategory">
+                <option value="Conference">Conference</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Meetup">Meetup</option>
+                <option value="Social">Social</option>
+                <option value="Webinar">Webinar</option>
+            </select>
+            <br>
+            <label for="Description">Description</label>
+            <br>
+            <textarea name="Description" id="Description"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        
+        </form>
+    </div>
+    <div class="events-div"></div>
+    <div class="dom-div"></div>
+    <script src="script.js"></script>
+</body>
+</html>
