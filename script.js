@@ -1,197 +1,310 @@
-// const para=document.querySelector("p")
-// para.innerText="Hello Shubham"
-// para.style.backgroundColor="Black"
-// para.style.color="White"
+// let obj={
+//     name:"Devendra",
+//     address:"Gurgaon",
+//     age:23
+// }
+// let obj2={
+//     name:"Devendra",
+//     address:"Gurgaon",
+//     age:23
+// }
+// obj.age=50
+// console.log(obj)
 
-// Selecting elements by class name
+// const para=document.querySelector(".para")
+// para.innerText="this is updated one"
+// console.info(document)
 
-// const paras=document.getElementsByClassName("para")
-// paras[0].innerText="Hello!"
-// paras[0].innerHTML="<h1 style='color:red; background-color:Thistle;'>WOOWWWW</h1>"
-// paras[1].style.color='Blue'
-// Returns an array of elements if there are multiple.
+// console.log("Helllo Studentss!")
 
-// Selecting elements by id
+// let obj={
+//     type:"Wooden",
+//     color:"Brown",
+//     length:"7ft"
+// }
 
-// const para=document.getElementById("heading")
-// para.innerText="MAIN SHUBHAM HUN"
-// para.innerHTML="<p id='heading' style='color:Blue;background-color:Thistle;'>MAIN SHUBHAM HUN</p> " 
+// let obj2={
+//     type:"iron",
+//     color:"Brown",
+//     length:"7ft"
+// }
+
+// obj.type="Plastic"
+// console.log(obj)
+
+// console.log(document)
+
+// const para=document.querySelector(".para")
+// para.innerText="This is a new paragraph"
+// para.style.color="green"
+// console.log(para)
+
+// console.log(document)
 
 
-// Returns a new array
-// let arr=[1, 2, 3, 4, 5, 6 ,7]
-// const newarr=arr.map((arr)=>2*arr)
-// console.log(newarr)    OUTPUT=> Array(7) [ 2, 4, 6, 8, 10, 12, 14 ]
+// const para=document.getElementById("para")
+// para.innerText="This is a new paragraph"
+// para.style.color="green"
+// console.log(para)
 
+// const para2=document.getElementsByClassName("para")  //return HTMLCollection
+// para2[0].innerText="This is a new paragraph"
+// para2[1].style.color="green"
+// console.log(para2)
 
-// Doesn't return a new array
-// let arr=[1,2,3,4,5,6,7]
-// arr.forEach((ele)=>console.log(arr+=2))
+// const para=document.querySelectorAll(".para")  //return NodeList
+// para[0].textContent="This is a new paragraph"
+// para[1].style.color="green"
+// console.log(para)
 
-// Difference in .textContent and .innerText
+// let arr=[23,54,46,232,564,23]
 
-// .textContent applies changes to the hidden elements also (display:none or visibility:hidden).
-// .innerText doesn't apply changes to hidden elements.
+// // const newArr=arr.map((ele)=>ele)  //it returns a new array
+// arr.forEach((ele)=>console.log(ele))  //it does not returns a new array
+
 
 // const container=document.querySelector(".container")
-// const button=document.querySelector("button")
-// container.addEventListener("click",()=>{
-//     console.log("Container clicked")
+// container.innerHTML="<h1>This is a Heading</h1>"
+// console.log(container)
+
+// function message(event)
+// {
+//     console.log(event.key)
+//     // alert("You have clicked the button")
+// }
+
+// const btn=document.querySelector("button")
+// btn.classList.add("btn")
+// btn.classList.remove("btn")
+// btn.addEventListener('click',message)
+// btn.addEventListener('keydown',message)
+// btn.addEventListener('keyup',message)
+// btn.removeEventListener('click',message)
+
+// const form=document.querySelector("form")
+// form.addEventListener('submit',function(event){
+//     event.preventDefault()
+//     console.log("Form Submitted")
 // })
 
-// button.addEventListener("click",()=>{
-//     console.log("Button clicked")
-// })
+// const container=document.querySelector('.container')
+// const outer=document.querySelector('.outer')
+// const button=document.querySelector('button')
 
-// console.log(a) ERROR: ReferenceError: Cannot access 'a' before initialization
-// console.log(b) Undefined
 
-// let a = 239
-// var b = 2595
+// container.addEventListener('click',()=>{console.log("Div")},true)
+// outer.addEventListener('click',()=>{console.log("Outer Div")},true)
+// button.addEventListener('click',()=>{console.log("Button")},true)
 
-// function hello(){
-//     console.log("Hello World")
+
+// console.log("New Code")
+// debugger
+// console.log(b)
+// // console.log(a)
+
+// let a=23534
+// var b=5674
+
+// console.log(a)
+// console.log(b)
+// function print(){
+//     var c=345
+//     console.log(c)
+//     console.log("Inside fn")
 // }
 
-// hello()
+// print()
 
 
-
-// function first() {
-    // second()
+// function first(){
+//     second()
 // }
-// function second() {
-    // third()
+// function second(){
+//     third()
 // }
-// function third() {
-    // console.trace()
+// function third(){
+//     console.trace()
 // }
 // first()
 
-// let val=40
-// 
-// function calc(){
-    // console.log(val)
-    // let val=100
+// function infinite(){
+//     infinite()
 // }
-// 
-// calc()
+// infinite()
 
-// console.log("Navya pagal hai")
-// setTimeout(()=>{console.log("Thodi jada hai")},2000)
-// console.log("Everything is true here.")
+// console.log(a)
+// console.log(b)
+// // console.log(c)
 
-// const variable=setTimeout(()=>{console.log(a);}, 1000)
-// clearTimeout(variable, 10000)
+// var a=345
+// let b=5674
 
-// let a=1
-// const variable=setInterval(()=>{console.log(a);a++;}, 1000)
-// const timeID=setTimeout(()=>{clearInterval(variable)},11000)
-// clearTimeout(timeID)
+// console.log(a)
+// console.log(b)
+
+// let total=40
+
+// function calculate(){
+//     console.log(total)
+//     let total=100
+// }
+// calculate()
+
+
+
+// console.log("First Line")
+// setTimeout(()=>{console.log("after 2 sec")},2000)
+// console.log("Second Line")
+
+
+// setTimeout(()=>{
+//     alert("Line after 2 Sec")
+// },2*1000)
+
+
+// const timerID=setInterval(()=>{console.log("setInterval")},1000)
+
+// const timeoutID=setTimeout(()=>{clearInterval(timerID)},10000)
+// clearTimeout(timeoutID)
+
+
+// let num=1;
+
+// const id=setInterval(()=>{
+//     if(num===10)clearInterval(id)
+//     console.log(num)
+//     num+=1
+// },1000)
+
+
+// console.log("before timeout")
+// setTimeout(() => {
+//     console.log("Settimeout")
+// }, 0);
+// console.log("After timeout")
 
 // const name=document.querySelector("#name")
-// const btn=document.querySelector(".btnadd")
+// const btn=document.querySelector(".btn")
 // const list=document.querySelector(".list")
-// const dlt=document.createElement('btndlt')
-// 
-    // btn.addEventListener("click",()=>{
-        // const li=document.createElement('li')
-        // const dlt=document.createElement('button')
-        // li.innerText=name.value;
-        
-        // list.appendChild(li)
-        // name.value="";
-    // })
-// dlt.addEventListener("click",()=>{
-    // list.removeChild(li)
-    // dlt.innerText="Delete"
-    // list.removeChild(li)
-// })
-    
-
-
-// const btn=document.querySelector('.btnadd')
-// const list=document.querySelector('.list')
 // btn.addEventListener('click',()=>{
-    // if (name.value===""){
-        // return;
-    // }
-    // const li=document.createElement('li')
-    // const dlt=document.createElement('btndlt')
-    // dlt.innerText="Delete"
+//     if(name.value===""){
+//         alert("Enter the name!!")
+//         return;
+//     }
+//     const li=document.createElement('li')
+//     const dlt=document.createElement('button')
+//     dlt.innerText="Delete"
+//     li.innerText=name.value;
+//     dlt.addEventListener("click",()=>{
+//         list.removeChild(li)
+//     })
+//     li.appendChild(dlt)
+//     list.appendChild(li)
+    
+//     name.value=""
 // })
 
 
-
-// function shubham(something){
-//     console.log("Hello Shubham")
-//     something()
-// }
-
-// function krish(){
-//     console.log("Krish ka sunega gaana")
-// }
-
-// shubham(krish())
-
-
-// console.log("Startinghomework...")
+// console.log("First Line")
 // setTimeout(()=>{
-//     console.log("Homework Done!")
-//     console.log("Starting Dinner....")
-
-//     setTimeout(()=>{
-//         console.log("Dinner Done!")
-//         console.log("Getting ready to go out")
-    
-//         setTimeout(()=>{
-//         console.log("Going to playground")
-            
-//         }, 1000)
-//     }, 1500)
+//     console.log("after 2 sec")
+//     console.log("Second Line")
 // },2000)
 
 
-// PROMISES IN JS
-// const p = new Promise((res, reje) =>{
-    // const a = 12-4
-    // if (a == 10){
-        // res("Success")
-    // } else {
-        // reje("Failed")
-    // }
-// })
-// 
-// p.then((message) =>{
-    // console.log("Then " + message)
-// }).catch((message) =>{
-    // console.log("Catch " + message)
-// })
-// 
-// function doHomework(){
-    // const p = new Promise((res, reje) =>{
-        // let done=true;
-        // setTimeout(()=>{if (done){
-        // res("Homework Done!")
-        // } else {
-            // reje("Homework Not Done!")
-        // }
-// }, 2000)
-        // return p
-    // })
+// function print(num){ //higher order fn
+//     setTimeout(()=>{
+//         console.log("Inside print")
+//          num()
+//     },2000)
+   
 // }
 
-function doHomework(){
-    const p = new Promise((res, reje) =>{
+// function sample(){  //callback fn
+//     console.log("Inside callback")
+    
+// }
+
+// print(sample)
+
+// console.log("Before Promise")
+const p=new Promise(function(res,rej){
+
+    let done=true;
+    setTimeout(()=>{
+        if(done){
+            res({name:"Anand",age:23})
+        }else{
+            rej("Word has not been completed")
+        }
+    },5000)
+})
+// // console.log(p)
+p.then((data)=>{
+    console.log("promise resolved")
+}).catch((err)=>{
+    console.log(err)
+}).finally(()=>{
+    console.log("Finally block")
+})
+//  console.log("After Promise")
+
+
+function doHomeWork(){
+    const p=new Promise((res,rej)=>{
         let done=true;
         setTimeout(()=>{
-            if (done){
-                res("Homework Done!")
-            } else {
-                reje("Homework Not Done!")
+            if(done){
+                console.log("Homework completed")
+                res("Homework is Done")
+            }else{
+                rej("Homework not completed")
             }
-        }, 2000)
+        },2000)
     })
     return p
 }
 
+function eatDinner(){
+    const p=new Promise((res,rej)=>{
+        let done=false;
+        setTimeout(()=>{
+            if(done){
+                console.log("Dinner completed")
+                res("Dinner is Done")
+            }else{
+                rej("Dinner not completed")
+            }
+        },2000)
+    })
+    return p
+}
+
+function goToPlayground(){
+    const p=new Promise((res,rej)=>{
+        let done=true;
+        setTimeout(()=>{
+            if(done){
+                console.log("Went to the playground")
+                res("Playground Time")
+            }else{
+                rej("Not Allowed to go!")
+            }
+        },2000)
+    })
+    return p
+}
+
+doHomeWork().then((data)=>{
+    console.log(data)
+    return eatDinner()
+}).then((data)=>{
+    console.log(data)
+    return goToPlayground()
+}).then((data)=>{
+    console.log(data)
+}).catch((err)=>{
+    console.log(err)
+}).finally(()=>{
+    console.log("Go To Sleep")
+})
