@@ -228,83 +228,121 @@
 // print(sample)
 
 // console.log("Before Promise")
-const p=new Promise(function(res,rej){
+// const p=new Promise(function(res,rej){
 
-    let done=true;
-    setTimeout(()=>{
-        if(done){
-            res({name:"Anand",age:23})
-        }else{
-            rej("Word has not been completed")
-        }
-    },5000)
-})
-// // console.log(p)
-p.then((data)=>{
-    console.log("promise resolved")
-}).catch((err)=>{
-    console.log(err)
-}).finally(()=>{
-    console.log("Finally block")
-})
+//     let done=true;
+//     setTimeout(()=>{
+//         if(done){
+//             res({name:"Anand",age:23})
+//         }else{
+//             rej("Word has not been completed")
+//         }
+//     },5000)
+// })
+// // // console.log(p)
+// p.then((data)=>{
+//     console.log("promise resolved")
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("Finally block")
+// })
 //  console.log("After Promise")
 
 
-function doHomeWork(){
-    const p=new Promise((res,rej)=>{
-        let done=true;
-        setTimeout(()=>{
-            if(done){
-                console.log("Homework completed")
-                res("Homework is Done")
-            }else{
-                rej("Homework not completed")
-            }
-        },2000)
-    })
-    return p
-}
+// function doHomeWork(){
+//     const p=new Promise((res,rej)=>{
+//         let done=true;
+//         setTimeout(()=>{
+//             if(done){
+//                 console.log("Homework completed")
+//                 res("Homework is Done")
+//             }else{
+//                 rej("Homework not completed")
+//             }
+//         },2000)
+//     })
+//     return p
+// }
 
-function eatDinner(){
-    const p=new Promise((res,rej)=>{
-        let done=false;
-        setTimeout(()=>{
-            if(done){
-                console.log("Dinner completed")
-                res("Dinner is Done")
-            }else{
-                rej("Dinner not completed")
-            }
-        },2000)
-    })
-    return p
-}
+// function eatDinner(){
+//     const p=new Promise((res,rej)=>{
+//         let done=false;
+//         setTimeout(()=>{
+//             if(done){
+//                 console.log("Dinner completed")
+//                 res("Dinner is Done")
+//             }else{
+//                 rej("Dinner not completed")
+//             }
+//         },2000)
+//     })
+//     return p
+// }
 
-function goToPlayground(){
-    const p=new Promise((res,rej)=>{
-        let done=true;
-        setTimeout(()=>{
-            if(done){
-                console.log("Went to the playground")
-                res("Playground Time")
-            }else{
-                rej("Not Allowed to go!")
-            }
-        },2000)
-    })
-    return p
-}
+// function goToPlayground(){
+//     const p=new Promise((res,rej)=>{
+//         let done=true;
+//         setTimeout(()=>{
+//             if(done){
+//                 console.log("Went to the playground")
+//                 res("Playground Time")
+//             }else{
+//                 rej("Not Allowed to go!")
+//             }
+//         },2000)
+//     })
+//     return p
+// }
 
-doHomeWork().then((data)=>{
-    console.log(data)
-    return eatDinner()
-}).then((data)=>{
-    console.log(data)
-    return goToPlayground()
-}).then((data)=>{
-    console.log(data)
-}).catch((err)=>{
-    console.log(err)
-}).finally(()=>{
-    console.log("Go To Sleep")
-})
+// doHomeWork().then((data)=>{
+//     console.log(data)
+//     return eatDinner()
+// }).then((data)=>{
+//     console.log(data)
+//     return goToPlayground()
+// }).then((data)=>{
+//     console.log(data)
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("Go To Sleep")
+// })
+
+
+// async function getData(){
+//     const resp=await fetch("https://dummyjson.com/products")
+//     const data=await resp.json()
+//     data.products.forEach((ele)=>{
+//         console.log(ele.title)
+//     })
+// }
+// getData()
+
+async function getData(){
+    try{
+        // Using POST method to add a new product
+        const resp=await fetch("https://dummyjson.com/products/add", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                title: "Macbook M5",
+                price: 100000,
+                description: "Latest Macbook with M5 chip",
+                category: "laptops",
+                thumbnail: "https://example.com/macbook-m5.jpg"
+            })
+        });
+        if (resp.ok===false) {
+            throw new Error("Error");
+        }
+        console.log(resp)
+        const data=await resp.json();
+        console.log("Product Added:", data);
+    }catch(err){
+        console.log("Error:", err);
+    }
+}
+getData()
