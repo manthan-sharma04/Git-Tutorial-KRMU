@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="title">
+        <h1>DASHBOARD</h1>
+    </div>
     <div class="form-div">
         <form id="form">
+            <h3>Add New Event</h3>
             <label for="eventTitle">Event Title</label>
             <br>
             <input type="text" name="eventTitle" id="eventTitle">
@@ -32,11 +36,14 @@
             <textarea name="Description" id="Description"></textarea>
             <br>
             <button type="submit">Submit</button>
-        
         </form>
     </div>
     <div class="events-div">
         <!-- Events will be displayed here -->
+        <div class="btn-group">
+            <button id="clearEvents">Clear Events</button>
+            <button id="sampleEvents">Add Sample Events</button>
+        </div>
     </div>
     <div class="dom-div">
         <!-- Showing live, the key pressed by user -->

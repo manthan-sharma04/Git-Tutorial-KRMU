@@ -1,10 +1,10 @@
 // let obj={
-//     name:"Devendra",
-//     address:"Gurgaon",
-//     age:23
+//     name:"Harsh",
+//     address:"Bangalore",
+//     age:34
 // }
 // let obj2={
-//     name:"Devendra",
+//     name:"Mohit",
 //     address:"Gurgaon",
 //     age:23
 // }
@@ -319,30 +319,64 @@
 // }
 // getData()
 
-async function getData(){
-    try{
-        // Using POST method to add a new product
-        const resp=await fetch("https://dummyjson.com/products/add", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                title: "Macbook M5",
-                price: 100000,
-                description: "Latest Macbook with M5 chip",
-                category: "laptops",
-                thumbnail: "https://example.com/macbook-m5.jpg"
-            })
-        });
-        if (resp.ok===false) {
-            throw new Error("Error");
-        }
-        console.log(resp)
-        const data=await resp.json();
-        console.log("Product Added:", data);
-    }catch(err){
-        console.log("Error:", err);
-    }
+// async function getData(){
+//     try{
+//         // Using POST method to add a new product
+//         const resp=await fetch("https://dummyjson.com/products/add", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify({
+//                 title: "Macbook M5",
+//                 price: 100000,
+//                 description: "Latest Macbook with M5 chip",
+//                 category: "laptops",
+//                 thumbnail: "https://example.com/macbook-m5.jpg"
+//             })
+//         });
+//         if (resp.ok===false) {
+//             throw new Error("Error");
+//         }
+//         console.log(resp)
+//         const data=await resp.json();
+//         console.log("Product Added:", data);
+//     }catch(err){
+//         console.log("Error:", err);
+//     }
+// }
+// getData()
+
+// localStorage.setItem("name","Harsh")
+// localStorage.setItem("age",23)
+
+// const name=localStorage.getItem("name")
+// const age=localStorage.getItem("age")
+
+// console.log(name)
+// console.log(age)
+
+// localStorage.removeItem("name")
+// localStorage.clear()
+
+// sessionStorage.setItem("name","Harsh")
+// sessionStorage.setItem("age",23)
+
+// const name=sessionStorage.getItem("name")
+// const age=sessionStorage.getItem("age")
+
+// console.log(name)
+// console.log(age)
+
+// sessionStorage.removeItem("name")
+// sessionStorage.clear()
+
+document.cookie="name=Harsh; expires=Fri, 28 Feb 2026 23:59:59 GMT;"
+document.cookie="age=23; expires=Fri, 28 Feb 2026 23:59:59 GMT;"
+
+async function fetchData() {
+    await fetch("http://localhost:5500/index.html")
+    console.log("Data Fetched!")
 }
-getData()
+
+fetchData()
