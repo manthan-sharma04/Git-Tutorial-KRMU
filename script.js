@@ -373,7 +373,6 @@
 
 document.cookie="name=Harsh; expires=Fri, 28 Feb 2026 23:59:59 GMT;"
 document.cookie="age=23; expires=Fri, 28 Feb 2026 23:59:59 GMT;"
-
 async function fetchData() {
     await fetch("http://localhost:5500/index.html")
     console.log("Data Fetched!")
