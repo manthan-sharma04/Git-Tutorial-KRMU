@@ -1,7 +1,7 @@
 const API_KEY="0133cc5316757ac730cc46ae342334e4"
 const form=document.querySelector("#form")
 const city=document.querySelector(".locationInpue")
-const weatherDetail=document.querySelector(".info")
+const weatherDetail=document.querySelector(".weatherContent")
 const searchHistory=document.querySelector(".historyBtn")
 
 let cityHistory=[]
